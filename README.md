@@ -1,6 +1,8 @@
 # Diabetes Risk Prediction System
 
-A machine learning application for predicting diabetes risk using clinical parameters, optimized for medical diagnosis scenarios with emphasis on minimizing false negatives.
+A machine learning web application for predicting diabetes risk using clinical parameters, optimized for medical diagnosis scenarios with emphasis on minimizing false negatives.
+
+Project hosted on [Streamlit Community Cloud](https://diabetes-prediction-ml-suaqje4jf3tbv32qsw6qgo.streamlit.app/) (Might be down sometimes due to lack of activity. If so, let me know)
 
 ## Project Overview
 
@@ -106,6 +108,7 @@ diabetes-prediction/
 
 ```bash
 Python 3.8+
+pip install -r requirements.text
 ```
 
 ### Dependencies
