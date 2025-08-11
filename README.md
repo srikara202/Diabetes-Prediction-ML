@@ -92,15 +92,12 @@ Evaluated multiple algorithms with focus on medical diagnosis requirements:
 
 ```
 diabetes-prediction/
-├── data/
-│   └── diabetes.csv                 # Dataset
-├── notebooks/
-│   └── project.ipynb               # Model development and analysis
-├── src/
-│   ├── diabetes_app.py             # Streamlit web application
-│   └── diabetes_model.pkl          # Trained model (generated)
-├── requirements.txt                 # Dependencies
-└── README.md                       # Project documentation
+├── diabetes.csv                # Dataset
+├── project.ipynb               # Model development and analysis
+├── diabetes_app.py             # Streamlit web application
+├── diabetes_model.pkl          # Trained model (generated)
+├── requirements.txt            # Dependencies
+└── README.md                   # Project documentation
 ```
 
 ## Installation and Usage
@@ -109,7 +106,6 @@ diabetes-prediction/
 
 ```bash
 Python 3.8+
-pip install -r requirements.txt
 ```
 
 ### Dependencies
@@ -127,13 +123,13 @@ joblib>=1.3.0
 
 1. **Model Training** (if needed):
    ```bash
-   jupyter notebook notebooks/project.ipynb
+   jupyter notebook project.ipynb
    # Execute all cells to train and save the model
    ```
 
 2. **Launch Web Application**:
    ```bash
-   streamlit run src/diabetes_app.py
+   streamlit run app.py
    ```
 
 3. **Access Interface**:
@@ -146,7 +142,7 @@ import joblib
 import numpy as np
 
 # Load trained model
-model = joblib.load('src/diabetes_model.pkl')
+model = joblib.load('diabetes_model.pkl')
 
 # Make prediction
 features = [[6, 148, 72, 35, 0, 33.6, 0.627, 50]]  # Example patient data

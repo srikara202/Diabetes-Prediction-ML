@@ -51,7 +51,7 @@ st.markdown("""
         margin: 1rem 0;
     }
     .risk-high {
-        background-color: #f8d7da;
+        background-color: #800000;
         padding: 1rem;
         border-radius: 0.5rem;
         border-left: 4px solid #dc3545;
