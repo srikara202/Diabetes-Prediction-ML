@@ -8,7 +8,7 @@ import os
 
 # Page configuration
 st.set_page_config(
-    page_title="Diabetes Prediction App",
+    page_title="Diabetes Prediction App For Women",
     page_icon="🩺",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -61,7 +61,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title
-st.markdown('<h1 class="main-header">🩺 Diabetes Risk Prediction</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">🩺 Diabetes Risk Prediction For Women</h1>', unsafe_allow_html=True)
 
 # Model loading function
 @st.cache_resource
